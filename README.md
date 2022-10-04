@@ -25,9 +25,9 @@ answers without having to wait for the completion time of the algorithms it woul
 # PARALLELIZATION AND MEMORY USAGE
 
 - This program is designed to run with multiple threads in parallel, and as such it will scan the 
-host machine and create as many threads as the host system has. However, due to Clark limiting
+host machine and create as many threads as the host system has. However, due to many clusters limiting
 thread usage, you will need to run a Slurm script to grant the program more than 1 core. However, 
-the program can't see how many cores Clark will allocate it, so it will always create as many threads
+the program can't see how many cores have been allocated to it, so it will always create as many threads
 as the cpu has threads, so if it is forced to run on one core, it will still create 24 threads and run
 them all on one core. 
 
