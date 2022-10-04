@@ -1,3 +1,7 @@
+Quick explanation:
+  This project was for my advanced algorithms class, and required finding an optimal solution to an arbitrary problem which had no efficient algorithm.
+  The goal was to use parallelization and multithreading as efficiently as possible to achieve the answer in the smallest time possible.
+
 # IMPORTANT NOTES
 
 - This program contains 2 algorithms inside of it. They both achieve the same end goal, but
@@ -27,12 +31,10 @@ the program can't see how many cores Clark will allocate it, so it will always c
 as the cpu has threads, so if it is forced to run on one core, it will still create 24 threads and run
 them all on one core. 
 
-- The memory usage is the entire reason that the above dual algorithm system was created. Once again
-however, I'm sure that Clark has a hard limit on the memory usage that is acceptable, but the program
+- The memory usage is the entire reason that the above dual algorithm system was created. Once again the program
 will only look to see if the calculation will use more than 100gb of ram. Anything under that, and the
-program will proceed with the fast algorithm. To change this, a Slurm script will likely work (if granting
-100gb is even possible) or engaging the slow mode with the above mentioned word "slow" being appended to the 
-end of the command.
+program will proceed with the fast algorithm. To change this, engaging the slow mode with the above 
+mentioned word "slow" being appended to the end of the command.
 
 # Clothing Distribution Program Overview
 
