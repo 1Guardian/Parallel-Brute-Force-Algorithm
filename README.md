@@ -1,5 +1,5 @@
 ### Quick explanation:
-  This project was for my advanced algorithms class, and required finding an optimal solution to an arbitrary problem which had no efficient algorithm.
+  This project was for my advanced algorithms class, and required finding an optimal solution to an arbitrary problem without using an efficient algorithm.
   The goal was to use parallelization and multithreading as efficiently as possible to achieve the answer in the smallest time possible.
 
 ## IMPORTANT NOTES
